@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] =  "Add a Wedding!";
+}
+@model Wedding
+<h1>@ViewBag.User.FirstName, let's plan a wedding!</h1>
+<a href="/logout">Logout</a> | <a href="/wedding/dashboard">Dashboard</a>
+
+<form asp-action="CreateWedding" asp-controller="Wedding" method="POST">
+    <div class="form-group">
+        <span asp-validation-for="Bride"></span>
+        <label asp-for="Bride">Bride: </label>
+        <input class="form-control" asp-for="Bride">
+    </div>
+
+    <div class="form-group">
+        <span asp-validation-for="Groom"></span>
+        <label asp-for="Groom">Groom: </label>
+        <input class="form-control" asp-for="Groom">
+    </div>
+
+    <div class="form-group">
+        <span asp-validation-for="Date"></span>
+        <label asp-for="Date">Date: </label>
+        <input class="form-control" asp-for="Date">
+    </div>
+
+    <div class="form-group">
+        <span asp-validation-for="Address"></span>
+        <label asp-for="Address">Address: </label>
+        <input class="form-control" asp-for="Address">
+    </div>
+    <div class="form-group">
+        <input type="hidden" value="@ViewBag.User.UserId" name="UserId">
+    </div>
+
+    <button type="submit">Add Wedding!</button>
+</form>

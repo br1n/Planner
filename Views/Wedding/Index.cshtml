@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] =  @ViewBag.User.FirstName + "'s Account";
+}
+
+<h1>Wecome to Wedding Planner, @ViewBag.User.FirstName!</h1>
+<a href="/logout">Logout</a> | <a href="/wedding/new_wedding">Add New Wedding!</a>
+<!-- Route to add wedding -->
+<hr>
+<table class="Wedding-Table">
+    <thead>
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guest</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Wedding wedding in ViewBag.Weddings)
+        {
+            <tr>
+                <td> 
+                    <a href="/wedding/@wedding.WeddingId">@wedding.Bride & @wedding.Groom</a>
+                </td>
+                <td> @wedding.CreatedAt.ToString("D")</td>
+                <td>@wedding.Attendees.Count</td>
+                    @{
+                        if(@wedding.UserId == ViewBag.User.UserId)
+                        {
+                            <td>
+                                <a href="delete/@wedding.WeddingId">Delete</a>
+                            </td>
+                        }
+                        else if(@wedding.Attendees.
+                        Where(att => att.UserId == @ViewBag.User.UserId).FirstOrDefault() == null)
+                        {
+                            <td>
+                                <a href="rsvp/@wedding.WeddingId">Attend</a>
+                            </td>
+                        }
+                        else
+                        {
+                            <td>
+                                <a href="unrsvp/@wedding.WeddingId">Unattend</a>
+                            </td>
+                        }
+                    }
+            </tr>
+        }
+    </tbody>
+</table>

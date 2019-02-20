@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] =  @ViewBag.Wedding.Bride + " & " + @ViewBag.Wedding.Groom + "'s Wedding";
+}
+
+<h1>@ViewBag.Wedding.Bride & @ViewBag.Wedding.Groom's Wedding</h1><a href="/logout">Logout</a> | <a href="/wedding/dashboard">Dashboard</a>
+<hr>
+<h4>Tying The Knot On: @ViewBag.Wedding.Date.ToString("D")</h4>
+<h5>Ceremony Address: @ViewBag.Wedding.Address </h5>
+<h5>Guests:</h5>
+@{
+    foreach(Attending attending in ViewBag.Wedding.Attendees)
+    {
+        <p> - @attending.attendingGuests.FirstName @attending.attendingGuests.LastName</p>
+    }
+}
+
+

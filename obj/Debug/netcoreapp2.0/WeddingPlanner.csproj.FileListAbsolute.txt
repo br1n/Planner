@@ -1,0 +1,10 @@
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/bin/Debug/netcoreapp2.0/WeddingPlanner.deps.json
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/bin/Debug/netcoreapp2.0/WeddingPlanner.runtimeconfig.json
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/bin/Debug/netcoreapp2.0/WeddingPlanner.runtimeconfig.dev.json
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/bin/Debug/netcoreapp2.0/WeddingPlanner.dll
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/bin/Debug/netcoreapp2.0/WeddingPlanner.pdb
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/obj/Debug/netcoreapp2.0/WeddingPlanner.csproj.CoreCompileInputs.cache
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/obj/Debug/netcoreapp2.0/WeddingPlanner.AssemblyInfoInputs.cache
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/obj/Debug/netcoreapp2.0/WeddingPlanner.AssemblyInfo.cs
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/obj/Debug/netcoreapp2.0/WeddingPlanner.dll
+/Users/BrettFishel/Documents/CodingDojo/CSharp/CS_week_7/WeddingPlanner/obj/Debug/netcoreapp2.0/WeddingPlanner.pdb
